@@ -1,0 +1,25 @@
+<nz-card class="_card-user-info" [nzCover]="coverTemplate" [nzActions]="[actionSetting, actionEdit, actionEllipsis]">
+  <nz-card-meta nzTitle="Card title" nzDescription="This is the description"></nz-card-meta>
+</nz-card>
+<ng-template #coverTemplate>
+  <nz-space
+    style="background-image: url('https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png');">
+    <span nz-typography>
+      <a href="https://ng.ant.design/" target="_blank">
+        <div class="_image-content-fake">
+        </div>
+        <Link />
+      </a>
+    </span>
+  </nz-space>
+  <!-- <img nz-image nzDisablePreview="true"  nzSrc="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"/> -->
+</ng-template>
+<ng-template #actionSetting>
+  <span nz-icon nzType="setting"></span>
+</ng-template>
+<ng-template #actionEdit>
+  <span nz-icon nzType="edit"></span>
+</ng-template>
+<ng-template #actionEllipsis>
+  <span nz-icon nzType="ellipsis"></span>
+</ng-template>

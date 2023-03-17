@@ -1,0 +1,21 @@
+$image-size: 250px;
+
+::ng-deep ._card-user-info {
+  box-shadow: 0 0 10px #00000021 !important;
+  .ant-card-cover {
+    display: flex;
+    justify-content: center;
+    nz-space {
+      width: $image-size;
+      height: $image-size;
+      background-size: cover;
+      border-radius: $image-size;
+      margin: 15px 0px;
+      border: 2px dashed #16a4ff;
+      div._image-content-fake {
+        width: $image-size;
+        height: $image-size;
+      }
+    }
+  }
+}
