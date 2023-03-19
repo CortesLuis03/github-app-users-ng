@@ -1,7 +1,20 @@
 <nz-space class="_container-user-selector">
-  <nz-select nzShowSearch nzServerSearch nzPlaceHolder="Search Github User" (ngModel)="selectedValue"
-    [nzBorderless]="true" [nzSize]="'large'" [nzShowArrow]="false" [nzFilterOption]="nzFilterOption"
-    (nzOnSearch)="search($event)">
-    <nz-option *ngFor="let o of listOfOption" [nzLabel]="o.text" [nzValue]="o.value"></nz-option>
+  <nz-select
+    nzShowSearch
+    nzServerSearch
+    nzPlaceHolder="Search Github User"
+    [(ngModel)]="selectedValue"
+    [nzBorderless]="true"
+    [nzSize]="'large'"
+    [nzShowArrow]="false"
+    [nzFilterOption]="nzFilterOption"
+    (nzOnSearch)="search($event)"
+    (ngModelChange)="handleSelect($event)"
+  >
+    <nz-option
+      *ngFor="let o of listOfOption"
+      [nzLabel]="o.text"
+      [nzValue]="o.value"
+    ></nz-option>
   </nz-select>
 </nz-space>

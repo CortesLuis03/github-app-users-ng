@@ -1,4 +1,4 @@
-$image-size: 250px;
+$image-size: 300px;
 
 ::ng-deep ._card-user-info {
   box-shadow: 0 0 10px #00000021 !important;
@@ -10,7 +10,7 @@ $image-size: 250px;
       height: $image-size;
       background-size: cover;
       border-radius: $image-size;
-      margin: 15px 0px;
+      margin: 20px 0px;
       border: 2px dashed #16a4ff;
       div._image-content-fake {
         width: $image-size;
@@ -18,4 +18,8 @@ $image-size: 250px;
       }
     }
   }
+}
+
+nz-list-item {
+  padding: 12px 0px !important;
 }

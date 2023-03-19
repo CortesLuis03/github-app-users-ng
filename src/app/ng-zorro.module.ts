@@ -10,6 +10,7 @@ import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzTypographyModule } from 'ng-zorro-antd/typography';
 import { NzImageModule } from 'ng-zorro-antd/image';
+import { NzListModule } from 'ng-zorro-antd/list';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { NzImageModule } from 'ng-zorro-antd/image';
         NzAvatarModule,
         NzIconModule,
         NzTypographyModule,
-        NzImageModule
+        NzImageModule,
+        NzListModule
     ]
 })
 

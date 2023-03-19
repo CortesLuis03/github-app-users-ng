@@ -75,7 +75,8 @@
               "browserTarget": "github-app-users-ng:build:production"
             },
             "development": {
-              "browserTarget": "github-app-users-ng:build:development"
+              "browserTarget": "github-app-users-ng:build:development",
+              "liveReload": true
             }
           },
           "defaultConfiguration": "development"
